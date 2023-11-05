@@ -94,6 +94,7 @@ gulp.task('js:dev', function () {
 		.pipe(gulp.dest('./build/js/'));
 });
 
+
 const serverOptions = {
 	livereload: true,
 	open: true,
@@ -110,4 +111,5 @@ gulp.task('watch:dev', function () {
 	gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:dev'));
 	gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
 	gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
+	gulp.watch('./src/js/**/*.js', gulp.parallel('server:dev'));
 });

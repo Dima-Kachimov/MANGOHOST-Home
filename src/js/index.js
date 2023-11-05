@@ -1,2 +1,3 @@
-import mobileNav from './modules/mobile-nav.js';
-mobileNav();
+import burger from "./modules/burger";
+
+burger()
