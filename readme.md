@@ -1,4 +1,4 @@
-<!-- # MANGOHOST
+# MANGOHOST
 [Посмотреть ДЕМО версию](https://dima-kachimov.github.io/MANGOHOST/)
 ## Технології
 + HTML
@@ -6,4 +6,4 @@
 + SASS
 + JavaScript
 + Gulp
-+ Git -->
++ Git
