@@ -58,7 +58,7 @@ gulp.task('html:docs', function () {
 		.pipe(changed('./docs/'))
 		.pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))
-		.pipe(webpHTML())
+		// .pipe(webpHTML())
 		.pipe(htmlclean())
 		.pipe(gulp.dest('./docs/'));
 });
@@ -71,7 +71,7 @@ gulp.task('sass:docs', function () {
 		.pipe(sourceMaps.init())
 		.pipe(autoprefixer())
 		.pipe(sassGlob())
-		.pipe(webpCss())
+		// .pipe(webpCss())
 		.pipe(groupMedia())
 		.pipe(sass())
 		.pipe(csso())
@@ -83,7 +83,7 @@ gulp.task('images:docs', function () {
 	return gulp
 		.src('./src/img/**/*')
 		.pipe(changed('./docs/img/'))
-		.pipe(webp())
+		// .pipe(webp())
 		.pipe(gulp.dest('./docs/img/'))
 		.pipe(gulp.src('./src/img/**/*'))
 		.pipe(changed('./docs/img/'))
