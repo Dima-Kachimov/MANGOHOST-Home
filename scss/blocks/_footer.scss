@@ -1,0 +1,126 @@
+
+
+.footer {
+    background: #2B2B2B;
+    min-height: 254px;
+}
+.footer-header {
+    
+}
+.footer-header__row{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.footer-itemm{
+
+}
+.footer-header__services {
+}
+.footer-header__title {
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 122.222222%; /* 22/18 */
+
+    margin-bottom: 18px;
+}
+.footer-header__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.footer-header__item {
+}
+.footer-header__link {
+    color: #fff;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 200%; /* 30/15 */
+}
+.footer-header__support {
+}
+.footer-header__info {
+}
+.footer-header__logo {
+    margin-bottom: 5px;
+}
+.footer-header__L-text {
+    color:#FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 200%; /* 30/15 */
+}
+.footer-bottom {
+}
+
+
+
+
+@media(max-width: 868px){
+    .footer-header__row{
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+}
+
+@media(max-width: 550px){
+   .footer-header__row{
+
+    }
+    .footer-item{
+        flex: 1 1 45%;
+    }
+}
+@media(max-width: 486px){
+    .footer-item{
+        flex: 1 1 100%;
+    }
+}
+
+
+
+.footer-bottom {
+    background: #1D1D1D;
+    height: 46px;
+}
+.footer-bottom__row {
+    padding-top: 7px;
+
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    align-items: center;
+}
+.footer-bottom__text {
+    color:  #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 200%; /* 30/15 */
+}
+.footer-bottom__social {
+}
+.footer-bottom__list {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+.footer-bottom__item {
+}
+.footer-bottom__link {
+}
+@media(max-width: 425px){
+    .footer-bottom__text {
+        display: none;
+    }
+    .footer-bottom__row{
+        justify-content: center;
+        column-gap: 5px;
+    }
+}

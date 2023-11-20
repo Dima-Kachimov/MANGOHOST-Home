@@ -1,0 +1,166 @@
+.nav {
+  background-color: #2b2b2b;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 49;
+}
+.nav__row {
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+  transition: all 0.2s ease-in;
+}
+.nav__item {
+}
+.nav__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 24/16 */
+
+  transition: all 0.3s ease;
+  &:hover {
+    color: #ffc741;
+  }
+}
+.nav__login {
+  position: relative;
+
+  width: 151px;
+  height: 43px;
+  background-color: #ffc741;
+  border-radius: 5px;
+
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #ffba1a;
+  }
+}
+.nav__login-link {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 24/16 */
+
+  &::after {
+    content: url('../img/nav/decor-login.svg');
+    padding-left: 6px;
+  }
+}
+
+// BURGER
+.nav__burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+
+  span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #fff;
+  }
+}
+.nav__burger::after,
+.nav__burger::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+.nav__burger::after {
+  top: 0;
+}
+.nav__burger::before {
+  bottom: 0;
+}
+
+// BURGER CLASS ACTIVE
+.nav__burger.active span {
+  transform: scale(0);
+}
+.nav__burger.active::after {
+  top: 50%;
+  transform: rotate(45deg) translate(0, -50%);
+}
+.nav__burger.active::before {
+  bottom: 50%;
+  transform: rotate(-45deg) translate(0, 50%);
+}
+
+// CLASS OPEN
+.open {
+  top: 100% !important;
+  left: 0 !important;
+}
+
+@media (max-width: 1030px) {
+  .nav__burger {
+    display: flex;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 100%;
+    left: -200%;
+    width: 320px;
+    height: 2000px;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 50px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.435);
+
+    .nav__link {
+      font-size: 23px;
+    }
+  }
+
+  .nav__logo {
+    flex: 1 1;
+  }
+
+  .nav__login {
+    margin-right: 40px;
+  }
+  .nav__burger {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  .nav__logo a {
+    display: block;
+    width: 58px;
+    overflow: hidden;
+  }
+  .nav__login {
+    width: 120px;
+  }
+}

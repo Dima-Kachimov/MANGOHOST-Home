@@ -1,0 +1,36 @@
+//FONTS
+// font-family: 'Raleway', sans-serif;
+
+
+//BASE
+@import "./base/reset";
+@import "./base/base";
+@import "./base/variables";
+
+
+//ELEMENTS
+@import "./elements/bottom-link";
+@import './elements/title-h2';
+@import "./elements/back-to-top";
+
+//BLOCKS
+@import "./blocks/nav";
+@import "./blocks/header-swiper";
+@import "./blocks/modal-login";
+@import "./blocks/prices";
+@import "./blocks/achievement";
+@import "./blocks/uniqueness";
+@import "./blocks/proffer";
+@import "./blocks/art";
+@import "./blocks/services";
+@import "./blocks/footer";
+
+
+
+
+
+
+
+//BLOCKS dedicated_ervers
+
+@import "./block-ervers/header-erv.scss";

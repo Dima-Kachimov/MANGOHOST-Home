@@ -1,0 +1,43 @@
+
+
+.art {
+    background: #F8F8F8;
+}
+.art__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    padding: 60px 0;
+}
+.art__content {
+    flex: 1 1 50%;
+}
+.art__title {
+    text-align: start;
+    margin-bottom: 10px;
+}
+.art__text {
+
+    p + p{
+        margin-top: 10px;
+    }
+}
+.art__img {
+    flex: 1 1 50%;
+    img{
+        border-radius: 20px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 939px){
+    .art__row{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .art__img{
+        flex: 1 1 100%;
+    }
+}

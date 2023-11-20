@@ -1,0 +1,47 @@
+
+
+body{
+    //TEXT
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #222;
+    font-size: 15px;
+    line-height: 146.666667%; /* 22/15 */
+    overflow-x: hidden;
+
+}
+
+// CONTAINER
+._container{
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+._overflow{
+    overflow: hidden;
+}
+._overflow-burger{
+    overflow: hidden;
+}
+._hidden{
+    display: none;
+    overflow: hidden;
+}
+//footer к низу
+._wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.main{
+    flex: 1 1 auto;
+    height: 100%;
+}
+
+
+body.modal-Login {
+    overflow: hidden;
+}

@@ -1,0 +1,138 @@
+
+
+.prices {
+    margin-bottom: 56px;
+}
+
+._container {
+}
+
+.prices__row {
+    margin-top: -56px;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+}
+
+.prices__item {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    width: 270px;
+    height: 440px;
+
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.15);
+
+    &:not:first-child{
+        border: 1px solid #EEE;
+    }
+}
+
+.prices-item__title {
+    height: 56px;
+
+    border-radius: 15px 15px 0px 0px;
+    background: #87AD3E;
+    border: 0px;
+
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 133.333333%; /* 24/18 */
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices-item__many {
+    padding: 25px 10px;
+    max-height: 72px;
+
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 133.333333%; /* 24/18 */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 80%; /* 24/30 */
+    }
+}
+
+.prices-item__many_MOD{
+    color: #87AD3E;
+}
+
+.prices-item__link {
+
+    display: block;
+    padding: 14px 10px;
+
+    color: #222;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%; /* 24/16 */
+
+    background: #E9E9E9;
+}
+
+.prices-item__text {
+    flex: 1 1;
+    @include text_p;
+
+    padding: 16px 25px 0px 25px;
+
+    p + p {
+        padding-top: 16px;
+    }
+}
+
+.prices-item__bottom_MOD {
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%; /* 24/16 */
+}
+
+
+
+@media (max-width: 1150px){
+    .prices__row{
+        flex-wrap: wrap;
+        column-gap: 6%;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .prices__item{
+        flex-basis: 43%;
+    }
+}
+
+@media (max-width: 680px){
+    .prices__item{
+        flex-basis: 80%;
+    }
+    .prices__row{
+        column-gap: 20px;
+    }
+}
+
+
+
+
