@@ -2,11 +2,7 @@
 
 
 // Слайдер
-$(document).ready(function(){
-    $('.slider').slick({
 
-    }); 
-})
 
 
 
